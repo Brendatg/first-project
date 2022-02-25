@@ -1,0 +1,91 @@
+:root {
+    --background-primary: #fff;
+    --background-secondary: #FFCC81;
+  
+    --gradient-one: #e7a0e0;
+    --gradient-tow: #febf66;
+  
+    --main: #3F96D4;
+    --secondary: #FF467E;
+  
+    --input: #E8E8E8;
+  
+    --text: #000;
+  
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width:1080px){
+    html{
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 720px) {
+    html{
+        font-size: 87.5%;
+    }
+}
+
+body, input, textarea, button {
+    /* NÃO APLICA EM ESTILO COMO PAI, SE COLOCA DIRETAMENTE*/
+    font-family: 'poppins', sans-serif;
+
+}
+body{
+    background: rgb(254,191,102);
+    background: linear-gradient(45deg, rgba(254,191,102,1) 0%, rgba(231,160,224,1) 100%);
+    width: 100%;
+    min-height: 100vh;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+
+main{
+    width: 83rem;
+    height: 80vh;
+    background: var(--background-primary);
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.side-content{
+    background: var(--background-secondary);
+
+}
+
+.header {
+    width: 100%;
+    padding: 3rem 3.5rem;
+}
+
+.side-content h1{
+    font-size: 2rem;
+    color: var(--text);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top:  1.3rem;
+}
+
+.wrapper-logo {
+    width: 5rem;
+}
+
+.wrapper-image {
+    width: 100%;
+}
